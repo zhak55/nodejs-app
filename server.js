@@ -25,6 +25,7 @@ http.createServer(function (req, res) {
 	
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.write("Welcome to Node.js on OpenShift!\n\n");
+  res.write("From your git!\n\n");
   res.end("Your IP address seems to be " + addr + "\n");
 }).listen(port, ipaddr);
 console.log("Server running at http://" + ipaddr + ":" + port + "/");
